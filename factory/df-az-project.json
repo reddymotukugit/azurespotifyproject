@@ -1,0 +1,9 @@
+{
+	"name": "df-az-project",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d6f50233-02aa-4b22-b37d-5952803c74c6",
+		"tenantId": "e2b83455-2862-42fe-8ea5-53677bb0d25e"
+	}
+}
