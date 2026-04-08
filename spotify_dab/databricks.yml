@@ -1,0 +1,20 @@
+bundle:
+  name: spotify_dab
+  uuid: 29077780-d7a2-4d42-8153-d40ba2b72985
+
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405606255404630.10.azuredatabricks.net
+      root_path: ~/Workspace/.bundle/${bundle.name}/${bundle.target}
+  prod:
+    mode: production
+    workspace:
+      host: https://adb-7405606255404630.10.azuredatabricks.net
+      root_path: ~/Workspace/PROD/.bundle/${bundle.name}/${bundle.target}
+    permissions:
+      - user_name: reddymotuku.cloud@outlook.com
+        level: CAN_MANAGE
